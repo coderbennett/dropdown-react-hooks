@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:antiquewhite;
 }
 
 code {
@@ -12,7 +13,26 @@ code {
     monospace;
 }
 
-.Question {
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 126px;
+  width: 264px;
+  margin: 126px auto;
+  background-color: darkolivegreen;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px rgb(171, 170, 170);
+}
+
+.residencyCheckbox {
+  margin: 12px auto;
+}
+
+.dropdown {
+  margin: 12px auto;
   display: flex;
   flex-direction: column;
 }
+
+

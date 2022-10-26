@@ -10,9 +10,11 @@ export default function Question() {
     }
 
     return (
-      <div className="Question">
-        <label for="question">Are you a US resident?</label>
-        <input type="checkbox" onChange={handleChange}></input>
+      <div className="question">
+        <div className="residencyCheckbox">
+          <label for="question">Are you a US resident?</label>
+          <input id="question" type="checkbox" onChange={handleChange}></input>
+        </div>
         <Dropdown value={isResident}/>
       </div>
     );

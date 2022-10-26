@@ -4,7 +4,7 @@ import countries from '../assets/countries';
 export default function Dropdown(prop) {
     
     return (
-      <div className="Dropdown">
+      <div className="dropdown">
         {prop.value === true ? (
           <>
             <label for="state">What state do you reside in?</label>
