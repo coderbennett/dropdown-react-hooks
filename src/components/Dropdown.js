@@ -1,4 +1,5 @@
 import states from '../assets/states';
+import countries from '../assets/countries';
 
 export default function Dropdown(prop) {
     
@@ -13,7 +14,16 @@ export default function Dropdown(prop) {
               ))}
             </select>
           </>
-        ) : (<>false news</>)}
+        ) : (
+          <>
+            <label for="country">What country do you reside in?</label>
+            <select name="country" id="country">
+              {countries.map((country) => (
+                <option value={country}>{country}</option>
+              ))}
+            </select>
+          </>
+        )}
       </div>
     );
   }

@@ -134,6 +134,7 @@ const countries = [
     "Palau",
     "Panama",
     "Papua New Guinea",
+    "Palestine",
     "Paraguay",
     "Peru",
     "Philippines",
