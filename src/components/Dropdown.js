@@ -1,11 +1,15 @@
 import states from '../assets/states';
 import countries from '../assets/countries';
+import { useState, createContext, useContext } from 'react';
+import { DropdownContext } from '../utils/DropdownContext';
 
-export default function Dropdown(prop) {
+export default function Dropdown() {
+
+  const isResident = useContext(DropdownContext);
     
     return (
       <div className="dropdown">
-        {prop.value === true ? (
+        {isResident === true ? (
           <>
             <label for="state">What state do you reside in?</label>
             <select name="state" id="state">
